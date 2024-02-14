@@ -1,0 +1,395 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 100%;
+    font-family: sans-serif;
+}
+
+div,
+section,
+span,
+ul,
+li,
+a,
+header {
+    box-sizing: border-box;
+}
+
+/*css reset*/
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+}
+
+#menu li {
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+}
+
+#menu li a {
+    color: #8f0000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+section {
+    width: 100%;
+    float: left;
+    height: 190vh;
+    position: relative;
+}
+
+#about ,#product,#pricing{
+    background-image: linear-gradient(to left top, #455367, #567b89, #74a3a2, #a4cab4, #e3efc9);
+}
+
+
+
+/* 
+#product {
+    background: rgb(238, 174, 202);
+    background: linear-gradient(248deg, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+
+ {
+    background: rgb(9, 9, 121);
+    background: linear-gradient(90deg, rgba(9, 9, 121, 1) 7%, rgba(7, 147, 143, 1) 40%, rgba(7, 150, 144, 1) 49%, rgba(5, 96, 168, 1) 69%, rgba(0, 212, 255, 1) 100%);
+}
+
+#contact {
+    background: rgb(9, 9, 121);
+    background: linear-gradient(90deg, rgba(9, 9, 121, 1) 7%, rgba(7, 147, 143, 1) 40%, rgba(7, 150, 144, 1) 49%, rgba(5, 96, 168, 1) 69%, rgba(0, 212, 255, 1) 100%);
+} */
+
+h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+/* whatsapp */
+.whatsapp_float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+
+.whatsapp-icon {
+    margin-top: 16px;
+}
+
+/* for mobile */
+@media screen and (max-width: 767px) {
+    .whatsapp-icon {
+        margin-top: 10px;
+    }
+
+    .whatsapp_float {
+        width: 40px;
+        height: 40px;
+        bottom: 20px;
+        right: 10px;
+        font-size: 22px;
+    }
+}
+
+.photo {
+    width: 150px;
+    height: 100px;
+    border-radius: 20%;
+
+
+}
+
+.box {
+    border-radius: 3%;
+    margin-left: 90px;
+    margin-right: 100px;
+    padding-top: 10%;
+    margin-top: 10px;
+    word-spacing: 12px;
+
+    color: rgb(0, 0, 0);
+    border: 4px solid rgb(16, 128, 219);
+    padding: 10px;
+    outline: #050505 solid 5px;
+
+}
+
+.dive {
+    font-size: large;
+    font-family: serif;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+image {
+    width: 100px;
+    height: 100px;
+}
+
+/* two */
+.div1 {
+    margin-top: 20%;
+    width: 50%;
+    float: left;
+
+}
+
+.div2 {
+    margin-top: 20%;
+    width: 50%;
+    float: right;
+
+}
+
+.cont {
+    margin-left: 50px;
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 15px;
+
+}
+
+.cont .nav {
+    cursor: pointer;
+}
+
+
+.container.signin {
+    text-align: center;
+    color: #777;
+
+}
+
+.bg {
+
+    background-image: url("b.png");
+
+
+    height: 20%;
+
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.bg1 {
+
+    background-image: url("bus.jpg");
+    height: 30%;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+.bg2{
+
+    background-image: url("img/c.jpg");
+    height: 30%;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.t {
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(12, 83, 214);
+    padding: 5%;
+
+}
+
+/* Registration */
+
+
+.booking{
+    margin-top: 200px;
+}
+
+:root {
+    --dark-body: #4d4c5a;
+    --dark-main: #141529;
+    --dark-second: #79788c;
+    --dark-hover: #323048;
+    --dark-text: #f8fbff;
+    --light-body: #f3f8fe;
+    --light-main: #fdfdfd;
+    --light-second: #c3c2c8;
+    --light-hover: #edf0f5;
+    --light-text: #151426;
+    --blue: #007497;
+    --white: #fff;
+    --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    --font-family: cursive;
+}
+
+.light {
+    --bg-body: var(--light-body);
+    --bg-main: var(--light-main);
+    --bg-second: var(--light-second);
+    --color-hover: var(--light-hover);
+    --color-txt: var(--light-text);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+}
+
+h1,
+p {
+    margin: 1em auto;
+    text-align: center;
+}
+
+form {
+
+    box-shadow: 5px 5px 10px #3b3737;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+fieldset {
+    margin-right: 20px;
+    border: none;
+    padding: 1.2rem 0;
+}
+
+label {
+    font-size: 16px;
+}
+
+.inline {
+
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+
+#accomodation {
+    position: static;
+}
+
+input,
+textarea,
+select {
+    padding: 10px;
+    margin: 7px 0 0 15px;
+    width: 100%;
+    min-height: 2em;
+}
+
+select,
+.room {
+    width: 7rem;
+    padding: 5px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, .1) 0 0 8px;
+}
+
+select {
+    color: black;
+    position: relative;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+input,
+textarea {
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.submit-btn {
+    display: block;
+    padding: 10px;
+    width: 10%;
+    margin: 1em auto;
+    border: 3px solid black;
+    border-radius: 30px;
+    font-size: 27px;
+    text-decoration: solid;
+    background-color: white;
+    min-width: 200px;
+    transition: ease 0.20s;
+}
+
+.submit-btn:hover {
+    cursor: pointer;
+    color: darkgreen;
+    border: 3px solid darkgreen;
+}
+.imag2{
+    margin-top: 100px;
+   
+    float: left;
+    padding: 10px;
+    align-items: center; 
+  float: left;
+  margin-left: 20%;
+}
+.txt2 {
+    font-size: 40px;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+}
+.txt3 {
+    font-size: 16px;
+    color: #100909;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    text-align: justify;
+}
+
+.error {
+    color: red;
+}
+
+

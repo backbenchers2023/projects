@@ -1,0 +1,146 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+.header-bottom {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Page Title Styles */
+.page-nav {
+    background-color: #e9ecef;
+    padding: 20px 0;
+}
+
+.page-nav h2 {
+    color: #1b1414;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.page-nav li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 10px;
+    color: #130f0f;
+}
+
+.page-nav i {
+    color: #100d0d;
+    margin-right: 5px;
+}
+
+/* Package Styles */
+.top-packages {
+    padding: 40px 0;
+}
+
+.pac-col {
+    margin-bottom: 30px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.pac-col img {
+    max-width: 100%;
+    height: auto;
+}
+
+.packdetail {
+    padding: 20px;
+}
+
+.packdetail h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.daydet span {
+    display: block;
+    color: #991a9b;
+    margin-bottom: 5px;
+}
+
+.daydet b {
+    color: #000000;
+    font-size: 18px;
+}
+
+.eview-row ul {
+    list-style: none;
+    padding: 0;
+}
+
+.eview-row li {
+    display: inline-block;
+    margin-right: 5px;
+    color: #ffd700;
+}
+
+/* Footer Styles (Not included in the provided HTML) */
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+    .header-bottom {
+        padding: 10px 0;
+    }
+
+    .logo {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .page-nav h2 {
+        font-size: 20px;
+    }
+
+    .page-nav li {
+        display: block;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    .pack-col {
+        width: 100%;
+    }
+}
+
+.rt {
+    text-align: right;
+    color: #333;
+}
+
+.rt1 {
+    text-align: right;
+    color: red;
+    font-weight: 700;
+}

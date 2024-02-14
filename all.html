@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MSM travels</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function validateDate(inputId) {
+            var selectedDate = document.getElementById(inputId).value;
+            var currentDate = new Date().toISOString().split('T')[0];
+
+            if (selectedDate < currentDate) {
+                alert("Please select a date in the future.");
+                document.getElementById(inputId).value = currentDate;
+            }
+        }
+
+        var phoneRegex = /^\d{10}$/;
+        var phoneNumber = document.getElementById('phone').value;
+        if (!phoneRegex.test(phoneNumber)) {
+            document.getElementById('phoneError').innerText = 'Invalid phone number';
+            event.preventDefault();
+        }
+
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        var email = document.getElementById('email').value;
+        if (!emailRegex.test(email)) {
+            document.getElementById('emailError').innerText = 'Invalid email address';
+            event.preventDefault();
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+
+    <header>
+        <a href="#"><img class="photo" src="img/icon.png" alt="" width="500" height="400"></a>
+        <ul id="menu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#product">Packages & Booking</a></li>
+            <li><a href="#pricing">Gallery</a></li>
+
+        </ul>
+    </header>
+    <section id="about">
+
+        <div class="bg">
+            <div class="div1">
+                <div class="t">WELCOME TO MSM TRAVELS</div>
+                <div class="box">
+                    <h3>MSM TRAVELS</h3><br>
+                    <div class="dive">MSM Travels - Tours and Travels company based on Udumalpet. We are providing all
+                        tourist vehicles based on your requirement.MSM Travels is Tours and Travels company established
+                        in 2010 by M.Mubarak.M,B,A.,. The company is located at Udumalpet (Very near to Railway Station)
+                        which is in Western Ghats hill ranges. Our main business services covering the following areas
+                        and states. Tamil Nadu, Kerala and South Indian states. We always try to satisfy our customers
+                        with providing best services.<br><br>
+                    </div>
+
+                </div>
+                <div class="box">
+
+
+                    <div class="dive">Our main business services covering the following areas and states. Tamil Nadu,
+                        Kerala and South Indian states. We always try to satisfy our customers with providing best
+                        services.<br><br>
+
+                        We arrange customized tour packages based on client requirements. Available vehicles list<br>
+
+                        • 21 Push Back Seated Tourist Vans<br>
+                        • 57 Push Back Tourist Buses<br>
+                        • Cars – Indigo, Omni, Tavera<br>
+                        • We also arrange cars based on custom requirements<br><br>
+
+                        If you hire us, you will get the following benefits:<br>
+                        • Low Pricing<br>
+                        • Best and on time Service<br>
+                        • Experienced Drivers<br>
+                        • Vehicle Condition – Very Fair and perfect<br>
+                        • Office located very near to Railway Station, Bus Stand<br>
+                        • 70 Km to Coimbatore International Airport<br>
+                        • Hotel and Lodge arrangements based on your requirement<br>
+                        • Resorts Booking<br>
+                        • Arrangements for hill station stay (Munnar, Valparai, Kodaikanal, Topslip Bamboo House)<br>
+                        • We will arrange tour guides as per your requirement.<br>
+
+                        For Inquires and Booking, Please contact : 99435 00807, 98651 17599, 93457 10031. Email:<br>
+                        msmtravels.udt@gmail.com Or Click here to fill the contact form.<br><br><br>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="div2">
+
+                <div class="box">
+                    <image>
+                        <marquee>
+                            <img src="info-img.jpg" width="350" height="350">
+                            <img src="slider-1.jpg" width="350" height="350">
+                            <img src="info-img.jpg" width="350" height="350">
+
+                        </marquee>
+                    </image>
+                </div>
+                <div class="box">
+                    <div class="dive"> QUICK CONTACT<br><br>
+                        Whatsapp Us: 99435 00807<br>
+                        <li> <a href="tel:+9199435 00807">Call Now
+                            </a></button>&nbsp;&nbsp;&nbsp;Enquiry Now for more details &#128522;
+                        <li> <a href="tel:+9198651 17599">Call Now
+                            </a></button>&nbsp;&nbsp;&nbsp;Enquiry Now for more details &#128512;
+
+                        <li> <a href="tel:+9193457 10031">Call Now
+                            </a></button>&nbsp;&nbsp;&nbsp;Enquiry Now for more details &#129512;<br>
+
+
+
+                            msmtravels.udt@gmail.com<br>
+                            <br>
+                            ABOUT AGENCY<br><br>
+                            MSM Travels,<br>
+                            #9, Murugan Complex,<br>
+                            CM Tower Opp,<br>
+                            Rajendra Road,<br>
+                            Near Railway Station,<br>
+                            Udumalpet. - 642 126.<br>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="product">
+        <div class="bg2">
+
+            <div class="div1">
+                <div class="box">
+                    <div class="txt2">Grab exciting discounts for your upcoming holidays to our most-loved destinations!
+                    </div><br>
+                    <div class="txt3"><br><br> Choose from dozens of Holiday Packages & Book your dream vacation with
+                        MSM
+                        TRAVELS!!<br><br> Best Holiday Experts. 24/7 Customer Support. Book Now Pay Later.
+                        Curated
+                        Packages.<br><br>10% OFFER FOR FIRST 10 BOOKING CUSTOMERS. BOOK FIRST , GET FIRST ,
+                        ENJOY IN
+                        A VAST!!...<br><br>"TAKE ONLY MEMORIES , LEAVE ONLY FOOTPRINTS""TRAVEL WITH NO REGRETS"
+                        <br><br>
+                        • Family Tour<br>
+                        • Honeymoon Tour<br>
+                        • Office Tour<br>
+                        • Pilgrims Tour<br>
+                        • Friends Tour<br>
+                        • College Tour<br>
+                        • School Tour<br>
+
+                    </div>
+                </div>
+                <div class="t"><a href="pack.html">Packages</div></a>
+            </div>
+            <div class="div2">
+
+
+                <p>Please fill out this form with the required information</p>
+
+
+                </head>
+
+                <body>
+
+                    <form id="reservationForm" action="book.php" method="post">
+                        <fieldset>
+                            <label>First Name: *
+                                <input type="text" class="data" name="firstname" placeholder="Enter first name"
+                                    required />
+                            </label>
+                            <label>Last Name: *
+                                <input type="text" name="lastname" placeholder="Enter last name" required />
+                            </label>
+                            <label>Email: *
+                                <input type="email" name="email" id="email" placeholder="Enter Email" required />
+                            </label>
+                            <span id="emailError" class="error"></span>
+                            <label>Phone Number: *
+                                <input type="tel" name="phone" id="phone" placeholder="Enter Phone number" required />
+                            </label>
+                            <span id="phoneError" class="error"></span>
+                            <label>Code: *
+                                <input type="code" name="code" id="code" placeholder="Enter Code" required />
+                            </label>
+
+                            <label>Check-in Date: *
+                                <input type="date" name="check-in-date" id="check-in-date" required
+                                    onchange="validateDate('check-in-date')" />
+                            </label>
+                            <label>Check-out Date: *
+                                <input type="date" name="check-out-date" id="check-out-date" required
+                                    onchange="validateDate('check-out-date')" />
+                            </label>
+                        </fieldset>
+                        <fieldset>
+                            <label> Accommodation Type: *
+                                <select name="accommodation" id="accommodation">
+                                    <option value="">Select One</option>
+                                    <option value="1">Hotel</option>
+                                    <option value="2">Self-Catered</option>
+                                    <option value="3">Hostel</option>
+                                    <option value="4">Guesthouse</option>
+                                </select>
+                            </label><br>
+
+                            <label>Number of room: *
+                                <input type="number" name="age" id="numberOfRooms" min="1" max="120"
+                                    class="room" /><br><br>
+                                <label>Room Type: * &nbsp;<br>
+                                    <label>
+                                        <input type="radio" name="room-type" class="inline" /> Single Room
+                                    </label><br>
+                                    <label>
+                                        <input type="radio" name="room-type" class="inline" /> Double Room
+                                    </label><br>
+                                    <label>
+                                        <input type="radio" name="room-type" class="inline" /> Triple Room
+                                    </label><br>
+                                    <label>
+                                        <input type="radio" name="room-type" class="inline" /> Quad Bedroom
+                                    </label>
+                                </label><br><br>
+
+                                <label>Additional Requests
+                                    <textarea name="additional" rows="5" cols="30"
+                                        placeholder="Your place where are you decided to go ..."></textarea>
+                                </label>
+                        </fieldset>
+                        <input type="submit" value="Submit" class="submit-btn" />
+                    </form>
+
+
+
+            </div>
+        </div>
+    </section>
+    <section id="pricing">
+        <div class="bg1"></div>
+        <div class="box">
+            <marquee behavior="alternate" scrollamount="10" onmousedown="this.stop();" onmouseup="this.start();">
+                <div class="imag2">
+                    <img src="img/v1.jpeg" alt="This is my image." width="250" height="250" />
+                    <img src="img/v2.jpeg" alt="This is my second image." height="250px" /><br>
+                    <img src="slider-1.jpg" alt="My third image." width="250" height="250" />
+                    <img src="img/v3.jpeg" alt="My third image." width="250" height="250" /><br>
+
+                    <img src="img/g3.jpg" alt="This is my image." width="250" height="250" />
+                    <img src="img/g6.jpg" alt="My third image." width="250" height="250" />
+                    <img src="img/g4.jpg" alt="This is my second image." height="250px" />
+
+
+                </div>
+            </marquee>
+            <div class="form-container">
+                <form class="upload-form" action="upload.php" method="post" enctype="multipart/form-data">
+                    Select Image to Upload:
+                    <input type="file" name="fileToUpload" id="fileToUpload" class="upload-input">
+                    <input type="submit" value="Upload Image" name="submit" class="upload-button">
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- whatsapp -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <a href="https:/wa.me/+919943500807" target="_blank" class="whatsapp_float"><i
+            class="fa-brands fa-whatsapp whatsapp-icon"></i></a>
+
+</body>
+
+</html>
